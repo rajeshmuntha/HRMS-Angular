@@ -45,7 +45,7 @@
                     </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                      <input type="password" class="form-control" placeholder="Enter Password" name="spassword" id="" ngModel required minlength="6" #spassword="ngModel" >
+                      <input type="password" class="form-control" placeholder="Enter Password" name="spassword" ngModel required minlength="6" #spassword="ngModel" >
                       <!--  id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 6 or more characters" -->
                       <div class="mt-1">
                         <div class="alert alert-danger" *ngIf="spassword.invalid && spassword.touched"><b>Your Password Should meet your requirements</b>
@@ -59,7 +59,7 @@
                       </div>               
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                      <input type="password" class="form-control" placeholder="Enter Confirm Password" name="sconfirmpassword" id="" ngModel required="required" minlength="6" #sconfimpassword="ngModel"> 
+                      <input type="password" class="form-control" placeholder="Enter Confirm Password" name="sconfirmpassword" ngModel required="required" minlength="6" #sconfimpassword="ngModel"> 
                       <!-- id="confirm_pass" onkeyup="validate_password()" -->
                       <div class="mt-1">
                         <div class="alert alert-danger" *ngIf="sconfimpassword.invalid && sconfimpassword.touched">Confirm password should Match Password entered before.</div>
